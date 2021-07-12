@@ -7,7 +7,7 @@ with open("angry-dog.jpg", "rb") as f:
     payload = bytearray(payload)
 
 response = client.invoke_endpoint(
-    EndpointName="classifier-endpoint",
+    EndpointName="demo-classifier-endpoint",
     Body=payload,
     ContentType="image/jpeg",
     # Accept="image/jpeg",
@@ -17,6 +17,6 @@ response = client.invoke_endpoint(
     # TargetContainerHostname='string',
     # InferenceId='string'
 )
+print(response)
 
 print(response["Body"].read())
-
