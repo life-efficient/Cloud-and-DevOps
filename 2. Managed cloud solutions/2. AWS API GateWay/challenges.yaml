@@ -1,8 +1,0 @@
-- create your own classification API
-  - firstly, create an API in API gateway
-  - create a new resource
-  - create a POST method on that resource
-  - create a new lambda function
-  - set it up as the backend integration for your new API resouce's POST method
-  - deploy the API
-  - make a request to the API through python
