@@ -1,0 +1,187 @@
+name: 1.1.0 Intro to Pandas
+questions:
+  - options:
+      - correct: true
+        option: import pandas as pd
+      - correct: false
+        option: import pandas as ps
+      - correct: false
+        option: from pandas import \*
+      - correct: false
+        option: from pandas import necessary, objects, here
+    question: What is the canonical way for importing the pandas library?
+  - options:
+      - correct: false
+        option: open\_{type}("filepath"), save\_{type}("filepath")
+      - correct: false
+        option: read\_{type}("filepath"), write\_{type}("filepath"),
+      - correct: false
+        option: from\_{type}("filepath"), save\_{type}("filepath")
+      - correct: true
+        option: from\_{type}("filepath"), to\_{type}("filepath")
+      - correct: true
+        option: read\_{type}("filepath"), to\_{type}("filepath")
+    question: 'What is the general syntax for DataFrame creation (from files or Python
+      objects) and saving to file?
+
+
+      Select ALL that apply'
+  - options:
+      - correct: false
+        option: df['time']
+      - correct: false
+        option: df.columns['time']
+      - correct: false
+        option: df.time
+      - correct: true
+        option: df[['time']]
+      - correct: false
+        option: df.loc[time']
+    question: 'Assume we have pandas DataFrame object named ''df''. How would you
+      choose single column named ''time'' in order to obtain DataFrame as a result?
+
+
+      Select ALL that apply'
+  - options:
+      - correct: false
+        option: df[0]
+      - correct: false
+        option: df.iloc[0]
+      - correct: true
+        option: df.loc[[0]]
+      - correct: false
+        option: df.loc[0]
+      - correct: false
+        option: df[[0]]
+      - correct: true
+        option: df.iloc[[0]]
+      - correct: false
+        option: df.loc[:, [0]]
+      - correct: true
+        option: df
+      - correct: true
+        option: df.head()
+      - correct: false
+        option: df.head(0)
+      - correct: true
+        option: df.tail()
+      - correct: true
+        option: df.tail(1)
+    question: 'We have DataFrame ''df'' containing single row. How could we access
+      the 0-th (zeroth) row in order to obtain it as DataFrame?
+
+
+      Select ALL that apply'
+  - options:
+      - correct: true
+        option: df[["A", "B", "C"]]
+      - correct: false
+        option: df["A", "B", "C"]
+      - correct: true
+        option: df.loc[:, :"C"]
+      - correct: false
+        option: df.loc[:"C"]
+      - correct: false
+        option: df.iloc[:, :"C"]
+      - correct: true
+        option: df.iloc[:, :3]
+      - correct: false
+        option: df.iloc[:, []]
+      - correct: false
+        option: df.iloc[:, list(range(len(df.columns)))]
+      - correct: true
+        option: df.iloc[:, list(range(len(df.columns)))[:-1]]
+      - correct: true
+        option: df.loc[:, ["A", "B", "C"]]
+    question: 'We would like to get three columns named "A", "B" and "C". In total
+      there are four columns ["A", "B", "C", "D"] given in that order.
+
+
+      It doesn''t matter how we get them (as list, as pandas.Series, as pandas.DataFrame),
+      as items, everything is fine, we only care about the data from those columns.
+      Dataframe, as per usual, named "df":
+
+
+      Select ALL that apply'
+  - options:
+      - correct: false
+        option: df.drop("A", inplace=True)
+      - correct: true
+        option: df.drop("A", axis=1, inplace=True)
+      - correct: false
+        option: df.drop("A", axis=0, inplace=True)
+      - correct: true
+        option: df.A = df.drop("A", axis="columns")
+      - correct: false
+        option: df.drop("A", axis="columns")
+      - correct: false
+        option: df.drop("A", axis=0)
+      - correct: false
+        option: df = df.drop("A")
+    question: "How can we drop column 'A' from dataframe 'df' so our changes are visible\
+      \ in the original dataframe? \n\nSelect ALL that apply"
+  - options:
+      - correct: true
+        option: df.tail(1)
+      - correct: false
+        option: df.head(-1)
+      - correct: false
+        option: df.head()
+      - correct: false
+        option: df.tail()
+      - correct: false
+        option: df.end()
+      - correct: false
+        option: df.end(1)
+    question: 'How to get the last row from our dataframe named ''df''?
+
+
+      Select ALL that apply'
+  - options:
+      - correct: false
+        option: df[df > 5]
+      - correct: true
+        option: df[~(df["A"] <= 5)]
+      - correct: true
+        option: df[df["A"] > 5]
+      - correct: true
+        option: df[df.A > 5]
+      - correct: false
+        option: df.greater("A", 5)
+    question: 'One of the columns in our dataframe ''df'' is named A.
+
+
+      A has numerical data in it. What condition should we use to return rows where
+      values of A are greater than 5?
+
+
+      Select ALL that apply'
+  - options:
+      - correct: true
+        option: pd.isnull(df)
+      - correct: true
+        option: df.isna()
+      - correct: false
+        option: df.isna(pd.NA)
+      - correct: true
+        option: df.isnull()
+      - correct: false
+        option: df.isnull(pd.NA)
+    question: 'How to get boolean array/matrix to detect where the NaNs are located?
+
+
+      Select ALL that apply'
+  - options:
+      - correct: true
+        option: series.value\_counts()
+      - correct: false
+        option: series.nunique()
+      - correct: false
+        option: series.count()
+      - correct: false
+        option: series.unique()
+    question: 'Having pd.Series object named ''series'', how can we obtain unique
+      values AND their count as another Series?
+
+
+      Select ALL that apply'

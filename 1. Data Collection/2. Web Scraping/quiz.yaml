@@ -1,0 +1,153 @@
+name: 1.0.1 Web scraping
+questions:
+  - options:
+      - correct: true
+        option: The content and layout of a webpage
+      - correct: false
+        option: The style of a webpage
+      - correct: false
+        option: Dynamic content like pop-ups
+    question: What does HTML specify?
+  - options:
+      - correct: false
+        option: JavaScript is commonly referred to as Java
+      - correct: true
+        option: CSS styling can be written within a HTML file
+      - correct: true
+        option: JavaScript can be written within a HTML file
+      - correct: false
+        option: HTML can be written within a CSS file
+      - correct: false
+        option: The name of the HTML "div" tag is short for "diverter"
+      - correct: true
+        option: JavaScript is used to make requests within a webpage or web application
+      - correct: false
+        option: HTML is a more flexible version of XML
+    question: Mark every option which is true
+  - options:
+      - correct: true
+        option: The two div tags are siblings
+      - correct: false
+        option: The "a" tag is a parent of the "div" tag below
+      - correct: false
+        option: The "a" tag is a parent of the "p" tag
+      - correct: true
+        option: The "p" tag is a child of a "div" tag which is a child of the "body"
+          tag
+      - correct: true
+        option: The "p" tag has two attributes, "class" and "id"
+      - correct: false
+        option: The "a" tag has one indicator, "href"
+      - correct: false
+        option: The 2nd "div" tag overwrites the first
+    question: Select all the options which correctly describe the HTML written below
+  - options:
+      - correct: false
+        option: Chromedriver is a Python program
+      - correct: true
+        option: Chromedriver is an executable program run by your system, not directly
+          by Python
+      - correct: false
+        option: Chromedriver must be in your Python path to be used by Selenium
+      - correct: false
+        option: Chromedriver is a Python library
+    question: Mark all options which are true about chromedriver
+  - options:
+      - correct: true
+        option: Selenium is a Python library
+      - correct: false
+        option: Selenium is a webdriver
+      - correct: true
+        option: Selenium was originally designed to automatically test the functionality
+          of websites and web applications
+      - correct: false
+        option: Selenium can be used for testing mobile apps
+      - correct: true
+        option: Selenium can pretend to be a mobile device using any website, even
+          if your Python program is running on a laptop
+      - correct: true
+        option: Selenium allows us to interact with a browser like a human would
+      - correct: true
+        option: Selenium can be used handle scraping dynamic webpages, which Python's
+          requests library may not be able to.
+    question: Mark everything true about Selenium (not the chemical element)
+  - options:
+      - correct: false
+        option: It runs the program on a remote computer rather than your local one
+      - correct: true
+        option: Selenium controls a browser without displaying it to you graphically
+          by opening a new browser window
+      - correct: false
+        option: None of your browser history is stored when your python scraper runs
+          and you cannot be tracked
+      - correct: true
+        option: You will need to use headless mode if you want to run a Selenium scraper
+          on a remote server
+    question: Which of the following are true about Selenium's "headless" mode?
+  - options:
+      - correct: true
+        option: Scrapers
+      - correct: false
+        option: Sharks
+      - correct: false
+        option: Sloths
+      - correct: true
+        option: Crawlers
+      - correct: true
+        option: Bots
+      - correct: false
+        option: Investigators
+      - correct: false
+        option: Administrators
+      - correct: true
+        option: Spiders
+      - correct: false
+        option: Masters
+    question: Which of the following names are names for types of web automation programs?
+  - options:
+      - correct: true
+        option: '"//div//img[@class=''wide'']" selects image tags which have a class
+          attribute equal to "wide" anywhere within any div tag'
+      - correct: false
+        option: '"//link" selects all links to other pages'
+      - correct: false
+        option: '"/div" selects all div elements that are direct children of the root
+          HTML tag'
+      - correct: true
+        option: '"//button[contains(@class, ''my\_class'')]" selects all elements
+          whose class attribute contains the "my\_class" class, potentially as well
+          as others'
+      - correct: true
+        option: '"//a/img[@class=''hello''][0] selects the zeroth image tag which
+          has a class exactly equal to ''hello'' and is a child of an anchor tag'
+      - correct: false
+        option: '"//a[src=''[https://www.google.com](https://www.google.com)'']" selects
+          all tags which take the user to Google''s homepage when clicked'
+    question: Select the options whose xpath match the descriptions
+  - options:
+      - correct: false
+        option: Web scrapers should be implemented as functions, but never as classes
+      - correct: true
+        option: The initialiser should create an instance of a webdriver
+      - correct: false
+        option: Your imports from Selenium should be inside the class constructor
+      - correct: false
+        option: When scraping images (or video or other files), you should just save
+          the links rather than downloading them - it will save memory, and you'll
+          always be able to download them later using that link if you need to
+      - correct: true
+        option: Scrapers should not scrape pages they have already scraped from. They
+          should have some way of keeping track of what they have and haven't collected
+          already.
+      - correct: true
+        option: 'Scrapers should generally have at least 2 methods: 1) to find all
+          of the pages you want to scrape and 2) to scrape all of the data from that
+          page. It''s better to separate them for readability.'
+      - correct: false
+        option: Data cleaning and processing should always be done during the scraping
+          process to save time later
+      - correct: false
+        option: We should make sure all of our XPath expressions are based on structure,
+          and use the full XPath, not class names etc. The structure of the page is
+          not likely to change, whereas class names are.
+    question: Mark all that are true about web scraper design
