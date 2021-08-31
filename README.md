@@ -1,4 +1,4 @@
-# Cloud & Devops
+# Cloud & DevOps
 
 ![Deploy](https://github.com/life-efficient/Deployment-Private/actions/workflows/content-review.yml/badge.svg)
 
